@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#151426">
+  <title>Tale of Dreamers | Digital Card Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="hero">
+      <div class="eyebrow">✦ A WORLD OF STORIES ✦</div>
+      <h1>Tale of Dreamers</h1>
+      <p class="subtitle">DIGITAL CARD COLLECTION</p>
+      <div class="ornament" aria-hidden="true">✧ ❀ ✧</div>
+    </header>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="nav-button active" data-page="collection">Collection</button>
+      <button class="nav-button" data-page="favorites">♡ Favorites</button>
+      <button class="nav-button" data-page="about">About</button>
+    </nav>
+
+    <main>
+      <section class="intro">
+        <p class="eyebrow">THE FIRST CHAPTER</p>
+        <h2 id="section-title">The Character Collection</h2>
+        <p id="section-description">Every dream has a story. Discover the characters and their worlds.</p>
+      </section>
+
+      <section class="filters" id="filters" aria-label="Filter cards">
+        <button class="filter-button active" data-filter="all">All cards</button>
+        <button class="filter-button" data-filter="moon">Moon</button>
+        <button class="filter-button" data-filter="bloom">Bloom</button>
+        <button class="filter-button" data-filter="star">Star</button>
+      </section>
+
+      <section class="card-grid" id="card-grid" aria-label="Character cards">
+        <!-- Cards are created from the character data in script.js. -->
+      </section>
+
+      <p class="interaction-hint" id="interaction-hint">✦ HOVER TO EXPLORE · CLICK TO FLIP ✦</p>
+
+      <section class="character-details" id="character-details" aria-live="polite">
+        <div class="detail-kicker">CHARACTER ARCHIVE</div>
+        <h2 id="detail-name">Choose a dreamer</h2>
+        <p id="detail-description">Select a card to discover more about its character.</p>
+        <div class="detail-tags" id="detail-tags"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>TALE OF DREAMERS</span>
+      <span>✧ A COLLECTION OF DREAMS ✧</span>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
